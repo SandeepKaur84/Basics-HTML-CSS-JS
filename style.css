@@ -1,0 +1,29 @@
+/* h3 {
+    color: chocolate;
+} */
+
+/* #email {
+    color: blue;
+    text-decoration: underline;
+} */
+
+/* label {
+    color: brown;
+} */
+
+#div1 {
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
+    border: 5px solid black;
+    /* height: 300px;
+    width: 800px; */
+    padding: 10px;
+}
+
+#div2 {
+    border: 2px dotted black;
+    /* margin: 10px 5px 10px 5px; */
+    margin: 15px;
+    background-color: beige;
+}
