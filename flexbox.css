@@ -12,3 +12,12 @@
     width: 100px;
     border: 2px solid black;
 }
+
+.div2 {
+    height: 500px;
+    width: 700px;
+    border: 2px solid black;
+    /* background-image: url("https://img.magnific.com/premium-vector/blue-car-flat-style-illustration-isolated-white-background_108231-795.jpg?semt=ais_hybrid&w=740&q=80"); */
+    background-image: url("car_img.png");
+    /* background-size: auto; */
+}
