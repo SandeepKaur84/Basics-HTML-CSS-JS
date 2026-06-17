@@ -1,53 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #mainContainer{
-            background-color: black;
-            color: white;
-            display: flex;
-            height: 50px;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 20px;
-            padding: 10px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      #mainContainer {
+        background-color: black;
+        color: white;
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 15px;
+      }
+      a:hover {
+        color: rgb(163, 107, 34);
+        font-size: 22px;
+      }
+      p {
+        margin-left: 20px;
+        color: rgb(163, 107, 34);
+        font-weight: 900;
+        font-size: 25px;
+      }
 
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            margin-right: 15px;
-        }
-        a:hover {
-            color: rgb(163, 107, 34);
-            font-size: 22px;
-        }
-        p{
-            margin-left: 20px;
-            color: rgb(163, 107, 34);
-            font-weight: 900;
-            font-size: 25px;
-        }
+      #home{
+        height: 90vh;
+        background-color: bisque ;
+      }
+
+       #about{
+        height: 100vh;
+        background-color: brown;
+        
+      }
+
+       #contact{
+        height: 100vh;
+        background-color:chocolate ;
+        
+      }
+
+       #help{
+        height: 100vh;
+        background-color: cornflowerblue;
+      }
+
+      footer {
+        height: 50vh;
+      }
     </style>
-</head>
-<body>
-    <div id="mainContainer">
-        <div id="logo">
-            <p>JK</p>
-        </div>
-        <div id="items">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Help</a>
-        </div>
-    </div>
-</body>
+  </head>
+  <body>
+    <header id="mainContainer">
+      <div id="logo">
+        <p>JK</p>
+      </div>
+      <div id="items">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#help">Help</a>
+      </div>
+    </header>
+    <main>
+      <section id="home"></section>
+      <section id="about"></section>
+      <section id="contact"></section>
+      <section id="help"></section>
+    </main>
+    <footer>
+        Copyright © 2026 JK Website
+    </footer>
+  </body>
 </html>
