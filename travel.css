@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  height: 70px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+}
+
+ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff9800;
+}
+
+.btn {
+  background: #ff9800;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #e65100;
+}
+
+/* Hero */
+
+.hero {
+  height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  animation: heroAnimation 2s;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+@keyframes heroAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  padding: 70px 10%;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 0 5px 15px gray;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+}
+
+/* Tours */
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.tour-grid div {
+  background: #eee;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.tour-grid div:hover {
+  transform: rotate(2deg);
+}
+
+/* Blogs */
+
+.blog {
+  display: flex;
+  gap: 30px;
+}
+
+article {
+  background: #222;
+  color: white;
+  padding: 30px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+/* Contact */
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+
+textarea {
+  height: 150px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tour-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+}
