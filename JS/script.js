@@ -64,4 +64,3 @@ console.log(typeof(gender));
 console.log(typeof(isValid));
 console.log(typeof(x));
 console.log(typeof(y));
-
